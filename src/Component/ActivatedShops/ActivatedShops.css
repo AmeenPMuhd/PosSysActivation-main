@@ -1,0 +1,93 @@
+.custom-select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+  }
+
+  /* Style the dropdown arrow */
+  .custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  .custom-text{
+    width: 200px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    margin-left: 5px;
+  }
+  
+  .custom-button{
+    background-color: #007bff; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+  }
+
+  /* Hover effect */
+.custom-button:hover {
+    background-color: #0872e3;
+  }
+  
+  /* Active effect */
+  .custom-button:active {
+    background-color: #164f8d;
+  }
+  
+/* LoadingIndicator.css */
+.loading-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed; /* Fixed position to stay in viewport on scroll */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: semi-transparent background */
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #555;
+  margin-left: 10px; /* Space between spinner and text */
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  border: 6px solid #f3f3f3; /* Light grey border */
+  border-top: 6px solid #3498db; /* Blue border for the spinner part */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spinner 1s linear infinite;
+}
+
+  

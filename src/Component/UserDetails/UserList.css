@@ -1,0 +1,71 @@
+.table-container {
+    margin: 20px;
+  }
+  
+  .combo-box {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+
+/* LoadingIndicator.css */
+.loading-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed; /* Fixed position to stay in viewport on scroll */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: semi-transparent background */
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #555;
+  margin-left: 10px; /* Space between spinner and text */
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  border: 6px solid #f3f3f3; /* Light grey border */
+  border-top: 6px solid #3498db; /* Blue border for the spinner part */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spinner 1s linear infinite;
+}
